@@ -1,0 +1,56 @@
+# phpMyAdmin
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+  namespace: default
+  labels:
+    app: phpmyadmin
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      containers:
+        - name: phpmyadmin
+          image: phpmyadmin/phpmyadmin:latest
+          env:
+            - name: PMA_HOST
+              value: "REPLACE_WITH_MYSQL_FQDN" #"rc1a-bjpobmorfuqluj7v.mdb.yandexcloud.net"
+            - name: PMA_PORT
+              value: "3306"
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: password
+          ports:
+            - containerPort: 80
+---
+# LoadBalancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: phpmyadmin-service
+  namespace: default
+spec:
+  selector:
+    app: phpmyadmin
+  ports:
+    - port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+# Secret
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-secret
+type: Opaque
+stringData:
+  password: "REPLACE_WITH_MYSQL_PASSWORD" #"*****"
