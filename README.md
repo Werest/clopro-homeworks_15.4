@@ -32,10 +32,25 @@
  - *Создать сервис-типы Load Balancer и подключиться к phpmyadmin. Предоставить скриншот с публичным адресом и подключением к БД.
 
 ---
+<img width="1127" height="1326" alt="1" src="https://github.com/user-attachments/assets/45dae016-1d92-4f71-b0f3-15cdd5c1454f" />
+<img width="1776" height="327" alt="2" src="https://github.com/user-attachments/assets/29c5741c-79a3-4499-aa97-a81640bf48c9" />
+<img width="1600" height="354" alt="3" src="https://github.com/user-attachments/assets/d186e255-c976-476a-8421-3f3a3d34838d" />
+<img width="714" height="318" alt="4" src="https://github.com/user-attachments/assets/a53e164f-97ca-4db0-9277-15f30704e8ba" />
+<img width="2076" height="938" alt="5" src="https://github.com/user-attachments/assets/d18bcdfc-2837-4fae-9432-f8231b3a5ffd" />
+<img width="1331" height="1100" alt="6" src="https://github.com/user-attachments/assets/ccc1fcfb-0aa8-48fe-836a-30ed4a8b7c06" />
+<img width="1244" height="842" alt="7" src="https://github.com/user-attachments/assets/4b197847-c119-48bd-af9f-bf23e8381935" />
+<img width="1566" height="519" alt="8" src="https://github.com/user-attachments/assets/67f45a8a-25ce-4622-b8b1-c299b904d50c" />
+<img width="1909" height="647" alt="9" src="https://github.com/user-attachments/assets/66c890cd-f12a-4bb1-8dc3-2e4298d9316d" />
+<img width="1309" height="791" alt="10" src="https://github.com/user-attachments/assets/c96c65ae-03c6-40e3-9f5a-daaf725e5054" />
+<img width="2030" height="468" alt="11" src="https://github.com/user-attachments/assets/a41bce27-dfef-4736-bf0e-035542c9ddf7" />
 
+---
 
-
-
+<img width="1253" height="960" alt="k8-1" src="https://github.com/user-attachments/assets/99407d9b-dd38-4f90-8cdb-b3d7947e37e8" />
+<img width="850" height="347" alt="k8-2" src="https://github.com/user-attachments/assets/373f4305-ff23-4cf6-b7f5-9cf845c7c013" />
+<img width="1211" height="792" alt="k8-3" src="https://github.com/user-attachments/assets/650a1273-22a5-4798-8cf2-f75815281340" />
+<img width="1612" height="1106" alt="k8-4" src="https://github.com/user-attachments/assets/0b4c595f-4be7-4340-9838-dcd6a7d56963" />
+<img width="1296" height="1283" alt="k8-5" src="https://github.com/user-attachments/assets/21902855-227d-4ed5-818b-011cd14f5c1d" />
 
 ---
 
