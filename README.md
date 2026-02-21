@@ -44,6 +44,10 @@
 <img width="1309" height="791" alt="10" src="https://github.com/user-attachments/assets/c96c65ae-03c6-40e3-9f5a-daaf725e5054" />
 <img width="2030" height="468" alt="11" src="https://github.com/user-attachments/assets/a41bce27-dfef-4736-bf0e-035542c9ddf7" />
 
+Попытка destroy
+<img width="1439" height="188" alt="image" src="https://github.com/user-attachments/assets/4bcb9f4e-cc2f-4b40-a566-67a25bef0aca" />
+
+
 ---
 
 <img width="1253" height="960" alt="k8-1" src="https://github.com/user-attachments/assets/99407d9b-dd38-4f90-8cdb-b3d7947e37e8" />
