@@ -32,6 +32,33 @@
  - *Создать сервис-типы Load Balancer и подключиться к phpmyadmin. Предоставить скриншот с публичным адресом и подключением к БД.
 
 ---
+Команды которые использовал:
+```
+# Получение credentials кластера
+yc managed-kubernetes cluster get-credentials netology-k8s-cluster --external
+# Установка переменной окружения KUBECONFIG
+$env:KUBECONFIG = "$HOME\.kube\config"
+
+kubectl cluster-info
+kubectl get nodes
+kubectl get pods
+
+# Получить FQDN MySQL из Terraform
+$MYSQL_FQDN = terraform output -json mysql_cluster_info | ConvertFrom-Json | Select-Object -ExpandProperty fqdn
+
+# Изменение параметров в манифесте phpmyadmin.yaml
+(Get-Content k8-manifests/phpmyadmin.yaml) -replace 'REPLACE_WITH_MYSQL_FQDN', $MYSQL_FQDN | Set-Content k8-manifests/phpmyadmin.yaml
+(Get-Content k8-manifests/phpmyadmin.yaml) -replace 'REPLACE_WITH_MYSQL_PASSWORD', '*****' | Set-Content k8-manifests/phpmyadmin.yaml
+
+# Применение
+kubectl apply -f k8-manifests/phpmyadmin.yaml
+
+# Проверить поды и сервис
+kubectl get pods
+kubectl get svc phpmyadmin-service
+```
+
+---
 <img width="1127" height="1326" alt="1" src="https://github.com/user-attachments/assets/45dae016-1d92-4f71-b0f3-15cdd5c1454f" />
 <img width="1776" height="327" alt="2" src="https://github.com/user-attachments/assets/29c5741c-79a3-4499-aa97-a81640bf48c9" />
 <img width="1600" height="354" alt="3" src="https://github.com/user-attachments/assets/d186e255-c976-476a-8421-3f3a3d34838d" />
